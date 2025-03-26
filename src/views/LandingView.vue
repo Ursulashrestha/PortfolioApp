@@ -2,9 +2,10 @@
     <section class="min-h-[calc(100vh*0.80)] w-full flex justify-center mb-52" id="landing-page">
         <div class="flex items-center space-x-0 space-y-7 md:space-y-0 md:space-x-7 flex-col md:flex-row m-auto">
             <img
-                :class="['w-64 h-64 md:w-72 md:h-72 lg:w-96 lg:h-96 rounded-full shadow-md transition-all motion-reduce:transition-none duration-500 delay-[400ms]', showTransition ? 'translate-y-0 opacity-1' : '-translate-y-4 opacity-0']"
-                :src="getImageUrl(content.portraitLink)"
-            />
+    :class="['w-64 h-64 md:w-72 md:h-72 lg:w-96 lg:h-96 shadow-md transition-all motion-reduce:transition-none duration-500 delay-[400ms] rounded-lg', showTransition ? 'translate-y-0 opacity-1' : '-translate-y-4 opacity-0']"
+    :src="getImageUrl(content.portraitLink)"
+/>
+
             <!-- Text Content -->
             <div class="flex flex-col space-y-3 text-center md:text-left">
                 <p class="text-lg lg:text-xl text-gray-700 dark:text-gray-300 font-medium transition-all duration-500 delay-[500ms]"
@@ -12,7 +13,6 @@
                    {{ content.intro }}
                 </p>
 
-                <!-- Typing Effect -->
                 <!-- Typing Effect -->
                 <h1 class="text-3xl lg:text-5xl font-extrabold bg-gradient-to-r from-[#A886E4] to-[#dd1eeb] bg-clip-text text-transparent transition-all duration-500 delay-[550ms]">
                     {{ typedName }}<span class="animate-blink">|</span>
@@ -70,10 +70,12 @@ const typeEffect = (text, speed = 100, delay = 1000) => {
 
 // Start the typing effect
 watchEffect(() => {
-    if (props.content?.name) {
-        typeEffect(props.content.name, 150, 1000); // Typing speed: 150ms, Pause: 1000ms
+    if (props.showTransition && props.content?.name) {
+        typedName.value = ''; // Reset to avoid stacking effects
+        typeEffect(props.content.name, 150, 1000);
     }
 });
+
 </script>
 
 <style>

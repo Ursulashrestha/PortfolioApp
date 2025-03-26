@@ -13,7 +13,7 @@
 
         .dropdown-enter-from,
         .dropdown-leave-to {
-            transform: translateY(-5%);
+            transform: translateY(-6%);
             opacity: 0;
         }
 
