@@ -13,18 +13,22 @@
             <div class="grid grid-rows-2 gap-y-4 order-1 xl:order-none">
                 <div class="grid grid-cols-2 gap-x-4">
                     <div>
-                        <img :src="getImageUrl(content.photo1Link)" class="shadow-md" loading="lazy"/>
+                        <img :src="getImageUrl(content.photo1Link)" class="shadow-md transition-transform duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg" loading="lazy"/>
+
                     </div>
                     <div>
-                        <img :src="getImageUrl(content.photo2Link)" class="shadow-md" loading="lazy"/>
+                        <img :src="getImageUrl(content.photo2Link)" class="shadow-md transition-transform duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg" loading="lazy"/>
+
                     </div>
                 </div>
                 <div class="grid grid-cols-2 gap-x-4">
                     <div>
-                        <img :src="getImageUrl(content.photo3Link)" class="shadow-md" loading="lazy"/>
+                        <img :src="getImageUrl(content.photo3Link)" class="shadow-md transition-transform duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg" loading="lazy"/>
+
                     </div>
                     <div>
-                        <img :src="getImageUrl(content.photo4Link)" class="shadow-md" loading="lazy"/>
+                        <img :src="getImageUrl(content.photo4Link)" class="shadow-md transition-transform duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg" loading="lazy"/>
+
                     </div>
                 </div>
             </div>
