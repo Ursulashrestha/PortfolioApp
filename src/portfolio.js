@@ -186,8 +186,8 @@ const contact = {
     externalLink: {
         shortTitle: "Get in Touch",
         note: [
-            "Actively seeking full-time software development positions.",
-        ], // paragraph breaks will be entered after each item,
+            "I am open to new opportunities and always happy to connect. If you have any questions, would like to discuss a potential collaboration, or just want to introduce yourself, feel free to reach out.",
+        ],
         link: {
             email: "info.ursulaa@gmail.com", // email takes precedance
         },

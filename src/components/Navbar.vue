@@ -64,16 +64,16 @@
             <div v-show="dropDownActive" class="block w-full absolute xl:hidden px-9 pb-4 bg-white/[.9] dark:bg-slate-900/[.8] backdrop-blur-sm">
                 <ul>
                     <li>
-                        <router-link class="block py-5  hover:text-link-color" to="/#about-section">😎 About</router-link>
+                        <router-link class="block py-5  hover:text-link-color" to="/#about-section"> About</router-link>
                     </li>
                     <li>
-                        <router-link class="block py-5  hover:text-link-color" to="/#experience-section">🛡️ Experience</router-link>
+                        <router-link class="block py-5  hover:text-link-color" to="/#experience-section">Experience</router-link>
                     </li>
+                    <!-- <li>
+                        <router-link class="block py-5  hover:text-link-color" to="/#work-section"> Work</router-link>
+                    </li> -->
                     <li>
-                        <router-link class="block py-5  hover:text-link-color" to="/#work-section">💻 Work</router-link>
-                    </li>
-                    <li>
-                        <router-link class="block py-5  hover:text-link-color" to="/#contact-section">📭 Contact</router-link>
+                        <router-link class="block py-5  hover:text-link-color" to="/#contact-section"> Contact</router-link>
                     </li>
                     <li>
                         <a :href="portfolio.greeting.resumeLink" target="_blank">
