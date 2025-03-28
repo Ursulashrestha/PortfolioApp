@@ -32,9 +32,7 @@
 
 						<ContactView :content="portfolio.contact" :transitions="portfolio.transitions" />
 
-						<!-- <footer class="hidden text-center md:block mb-5">
-							<p>Designed & Created by <a href="https://www.linkedin.com/in/ursula-shrestha/" class="hover:text-link-color" target="_blank"></a></p>
-						</footer> -->
+
 					</div>
 				</div>
 			</div>
