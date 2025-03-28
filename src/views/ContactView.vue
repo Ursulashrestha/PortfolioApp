@@ -8,7 +8,7 @@
       <div :class="['flex flex-col my-auto transition-all motion-reduce:transition-none duration-500 delay-300', visible ? 'translate-y-0 opacity-1 blur-0' : 'translate-y-4 opacity-0 blur-sm']">
         <div class="space-y-8 mx-auto">
           <h1 class="text-3xl font-extrabold text-center">Get in Touch</h1>
-          <h1 class="text-5xl font-extrabold text-center" style="color: #5e17eb;">Let's Work Together</h1>
+          <h1 class="text-5xl font-extrabold text-center text-link-color block">Let's Work Together</h1>
   
           <p v-for="msg in content.externalLink.note" class="text-slate-500 dark:text-slate-300 text-center">{{ msg }}<br /></p>
           <div class="flex flex-col sm:flex-row items-center justify-center space-y-5 sm:space-x-5">
