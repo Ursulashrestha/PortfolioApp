@@ -1,15 +1,14 @@
 <template>
-    <section class="min-h-[calc(100vh*0.80)] w-full flex justify-center mb-52" id="landing-page">
+    <section class="min-h-[calc(100vh*0.80)] w-full flex justify-center" id="landing-page">
         <div class="flex items-center space-x-0 space-y-7 md:space-y-0 md:space-x-7 flex-col md:flex-row m-auto">
             <img
-    :class="[
-        'max-w-[16rem] max-h-[16rem] md:max-w-[18rem] md:max-h-[18rem] lg:max-w-[24rem] lg:max-h-[24rem] shadow-md transition-all motion-reduce:transition-none duration-500 delay-[400ms] rounded-lg',
+    :class="[ 
+        'max-w-[20rem] max-h-[20rem] md:max-w-[22rem] md:max-h-[22rem] lg:max-w-[28rem] lg:max-h-[28rem] shadow-md transition-all motion-reduce:transition-none duration-500 delay-[400ms] rounded-lg',
         showTransition ? 'translate-y-0 opacity-1' : '-translate-y-4 opacity-0'
     ]"
     :src="getImageUrl(content.portraitLink)"
-    style="object-fit: cover; min-width: 16rem; min-height: 16rem;"
+    style="object-fit: cover; min-width: 18rem; min-height: 18rem;"
 />
-
 
             <!-- Text Content -->
             <div class="flex flex-col space-y-3 text-center md:text-left">
