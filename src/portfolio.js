@@ -1,7 +1,3 @@
-// --- 🎨 Site Styling ---
-
-// Colors (recommendation: choose a color suitable for dark and light modes)
-// Should be inputted as a hex value. Use https://g.co/kgs/XCcs7T for choosing colors with hex.
 const colors = {
     buttonColor: "#4305ba",
     LinkHighlightColor: "#4305ba"
@@ -16,7 +12,7 @@ const transitions = {
 }
 
 // Splash Screen
-const splashScreen = true // recommended: for best behavior after refresh
+const splashScreen = true
 
 // --- 👋 Greeting Section ---
 const greeting = {
@@ -26,10 +22,10 @@ const greeting = {
     basedLocation: "Paris, France",
     resumeLink: "https://drive.google.com/file/d/1h1z_k4-Au6pKsPg43OxHjP69FRkKYNBl/view?usp=sharing", // 
     logo: {
-        link: "images/initials.png", // use relative path from  parent directory -> ex: images/image.ext
-        custom: true // takes precedence over image logo and allows for custom HTML logo (./components/Navbar.vue)
+        link: "images/initials.png",
+        custom: true 
     },
-    portraitLink: 'images/recentportrait.jpeg'
+    portraitLink: 'images/that.jpeg'
 }
 
 const socialMediaLinks = {
@@ -52,7 +48,7 @@ const about = {
     photo4Link: "images/UI.png"
 }
 
-// --- 🛡️ Experience Section ---
+// --- Experience Section ---
 const experiences = [
     {
         position: "FullStack Engineer Intern",
@@ -101,7 +97,7 @@ const experiences = [
     }
 ]
 
-// --- 💻 Work Section ---
+// --- Work Section ---
 const works = [
     {
         projectName: "EdTech AI Tool",
@@ -180,8 +176,7 @@ const works = [
     },
 ]
 
-// --- 📭 Contact Section ---
-// 2 Options available - Choose 1
+// ---  Contact Section ---
 const contact = {
     externalLink: {
         shortTitle: "Get in Touch",
@@ -189,11 +184,11 @@ const contact = {
             "I am open to new opportunities and always happy to connect. If you have any questions, would like to discuss a potential collaboration, or just want to introduce yourself, feel free to reach out.",
         ],
         link: {
-            email: "info.ursulaa@gmail.com", // email takes precedance
+            email: "info.ursulaa@gmail.com",
         },
         responseTimeMessage: ""
     },
-    formEmbedLink: "" // inclusion of this link will take precedance
+    // formEmbedLink: ""
 }
 
 export default {
