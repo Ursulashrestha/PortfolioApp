@@ -10,7 +10,6 @@
     style="object-fit: cover; min-width: 18rem; min-height: 18rem;"
 />
 
-            <!-- Text Content -->
             <div class="flex flex-col space-y-3 text-center md:text-left">
                 <p class="text-lg lg:text-xl text-gray-700 dark:text-gray-300 font-medium transition-all duration-500 delay-[500ms]"
                    :class="showTransition ? 'translate-y-0 opacity-1' : '-translate-y-4 opacity-0'">
