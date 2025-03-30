@@ -14,7 +14,6 @@ const transitions = {
 // Splash Screen
 const splashScreen = true
 
-// --- 👋 Greeting Section ---
 const greeting = {
     intro: "Hey there! 👋, I am",
     name: "Ursula Shrestha",
