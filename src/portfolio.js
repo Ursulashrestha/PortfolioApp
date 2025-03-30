@@ -5,10 +5,10 @@ const colors = {
 
 // Transitions
 const transitions = {
-    active: true, // activate for all sections
-    onlyLanding: false, // activate only for initial load of landing page
-    showOnce: true, // transition only once
-    thresholdOption: 0.2 // indicates at what percentage of the sections visibility the transition should start
+    active: true,
+    onlyLanding: false,
+    showOnce: true,
+    thresholdOption: 0.2
 }
 
 // Splash Screen
