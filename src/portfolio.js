@@ -24,7 +24,7 @@ const greeting = {
         link: "images/initials.png",
         custom: true 
     },
-    portraitLink: 'images/that.jpeg'
+    portraitLink: "images/that.jpeg"
 }
 
 const socialMediaLinks = {
