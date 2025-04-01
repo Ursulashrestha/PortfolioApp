@@ -42,8 +42,11 @@ const props = defineProps({
 const typedName = ref('');
 const isTyping = ref(true);
 
+const images = import.meta.glob('@/assets/images/*', { eager: true });
+
 const getImageUrl = (path) => {
-  return new URL(`../assets/${path}`, import.meta.url).href;
+  const key = `/src/assets/${path}`;
+  return images[key]?.default || '';
 };
 
 // Continuous Typing Effect

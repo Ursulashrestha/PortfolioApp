@@ -47,9 +47,11 @@ const props = defineProps({
 const aboutSection = ref({})
 const visible = props.transitions.active && window.matchMedia('(prefers-reduced-motion: no-preference)').matches ? onIntersect(aboutSection, !!props.transitions.showOnce, { threshold: props.transitions.thresholdOption }) : true
 
-// Static Images
-let getImageUrl = (path) => {
-  return new URL(`../assets/${path}`, import.meta.url).href
-}
+const images = import.meta.glob('@/assets/images/*', { eager: true });
+
+const getImageUrl = (path) => {
+  const key = `/src/assets/${path}`;
+  return images[key]?.default || '';
+};
 
 </script>
