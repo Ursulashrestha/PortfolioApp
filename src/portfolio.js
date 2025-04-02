@@ -18,7 +18,7 @@ const greeting = {
     intro: "Hey there! 👋, I am",
     name: "Ursula Shrestha",
     message: "I’m a full-stack software engineer dedicated to developing efficient, secure, and scalable solutions. I’m passionate about using technology to empower communities, drive business growth, and make a meaningful impact.",
-    resumeLink: "https://drive.google.com/file/d/1h1z_k4-Au6pKsPg43OxHjP69FRkKYNBl/view?usp=sharing", // 
+    resumeLink: "https://drive.google.com/file/d/1Qe-lgjjMlhS3XO_84FRc2PcRDZaWJlCz/view?usp=sharing", // 
     logo: {
         link: "images/initials.png",
         custom: true 
