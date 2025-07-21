@@ -98,39 +98,37 @@ const experiences = [
 // --- Work Section ---
 const works = [
     {
-        projectName: "EdTech AI Tool",
+        projectName: "",
         yearCompleted: "2024",
-        description: "Developed an educational tool in collaboration with a peer, to rethink the college student and AI interaction. With a core principle to enhance learning and personal growth. Responsible for UI, UX, and DB management with ongoing goal to complete version 1.0 in December 2024.",
-        techStack: "Python, Vue.js",
+        description: "",
         links: [
         ],
         imageLink: "images/version_edtech_pic.png",
         alignLeft: false
     },
     {
-        projectName: "Open-Source Developer Portfolio",
+        projectName: "",
         yearCompleted: "2023",
-        description: "Designed and developed an open-sourced single page application template to help web developers create visually appealing personal portfolios, focusing on ease of use and customization. Built with Vue.js, JS, HTML, Tailwind CSS, the project achieved 27 stars and 14 forks on GitHub.",
-        techStack: "Vue.js, JS, HTML, Tailwind.css",
+        description: "",
         links: [
             {
                 label: "",
                 type: "git",
-                url: "https://github.com/feifyKike/webdev_portfolio"
+                url: ""
             },
             {
                 label: "",
                 type: "external",
-                url: "https://feifykike.github.io/webdev_portfolio"
+                url: ""
             }
         ],
-        imageLink: "images/webdevportfolio_pic.png",
+        imageLink: "",
         alignLeft: true
     },
     {
-        projectName: "TrackYourSubs IOS App",
+        projectName: "",
         yearCompleted: "2022",
-        description: "An IOS app to track you subscriptions and expenses, all the while presenting in a clean and professional look with a load of features. Some of the more evident features are: Budgeting (monthly / yearly option available), Current monthly & yearly total expense at a glance, Custom suggestions to meet budget, Organize (Categorization & Importance) and filter through subscriptions, Reminders via scheduled notifications, Stats page: pie chart visual, bar chart visual, and streak indicator.",
+        description: "",
         techStack: "Swift, SwiftUI",
         links: [
             {
@@ -156,7 +154,7 @@ const works = [
             {
                 label: "",
                 type: "external",
-                url: "https://site--maximshelepov--6tkhqqjrq9c5.code.run"
+                url: ""
             }
         ],
         imageLink: "images/portfolio_pic.png",
@@ -169,7 +167,7 @@ const contact = {
     externalLink: {
         shortTitle: "Get in Touch",
         note: [
-            "I am open to new opportunities and always happy to connect. If you have any questions, would like to discuss a potential collaboration, or just want to introduce yourself, feel free to reach out.",
+            "I am open to new opportunities and always happy to connect. If you have any questions, would like to discuss a potential collaboration, or want to request my resume, feel free to reach out.",
         ],
         link: {
             email: "info.ursulaa@gmail.com",
