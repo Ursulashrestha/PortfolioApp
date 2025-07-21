@@ -102,7 +102,7 @@ const status = ref(null)
 const loading = ref(false)
 
 // Backend endpoint
-const API_URL = 'https://portfolioapp-backend-services.onrender.com'
+const API_URL = 'https://portfolioapp-backend-services.onrender.com/contact'
 
 // Basic form validation
 function validateForm() {
