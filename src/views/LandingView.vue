@@ -3,7 +3,7 @@
         <div class="flex items-center space-x-0 space-y-7 md:space-y-0 md:space-x-7 flex-col md:flex-row m-auto">
             <img
     :class="[ 
-        'max-w-[20rem] max-h-[20rem] md:max-w-[22rem] md:max-h-[22rem] lg:max-w-[28rem] lg:max-h-[28rem] shadow-md transition-all motion-reduce:transition-none duration-500 delay-[400ms] rounded-lg',
+        'max-w-[20rem] max-h-[20rem] md:max-w-[22rem] md:max-h-[22rem] lg:max-w-[28rem] lg:max-h-[28rem]  transition-all motion-reduce:transition-none duration-500 delay-[400ms]',
         showTransition ? 'translate-y-0 opacity-1' : '-translate-y-4 opacity-0'
     ]"
     :src="getImageUrl(content.portraitLink)"
