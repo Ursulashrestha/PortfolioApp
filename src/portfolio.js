@@ -17,7 +17,7 @@ const splashScreen = true
 const greeting = {
     intro: "Hey there! 👋, I am",
     name: "Ursula Shrestha",
-    message: "I’m a full-stack software engineer dedicated to developing efficient, secure, and scalable solutions. I’m passionate about using technology to empower communities, drive business growth, and make a meaningful impact.",
+    message: "I design and engineer full-stack systems that are fast, secure, and built to last. My work blends clean code with clear purpose, driving real impact where it matters.",
     resumeLink: "https://drive.google.com/file/d/1qY5gcfWFfveIRw-pbqdFCDf3c8pLBcX3/view?usp=sharing", // 
     logo: {
         link: "images/initials.png",
@@ -37,8 +37,8 @@ const socialMediaLinks = {
 const about = {
     autobiography: [
         "I’m a driven Full-Stack Engineer with a strong focus on building scalable and innovative digital solutions. Currently, I’m in my final year of a Master’s in Computer Science at EPITA, Paris, specializing in Software Engineering.",
-        "Recently, I completed an end-of-study internship at École Polytechnique – Drahi X-Novation Center, where I worked with the startup, Floware. This experience allowed me to refine my skills in both front-end and back-end development, tackle real-world challenges, and collaborate in an environment that values cutting-edge technology and innovation",
-        "I’m always eager to learn, adapt, and push the boundaries of what’s possible in software development.I believe that technology should not only be powerful but also practical and user-focused, and that’s the mindset I bring to every project."
+        "Recently, I completed an end-of-study internship at École Polytechnique Drahi X-Novation Center, where I worked with the startup, Floware. This experience allowed me to refine my skills in both front-end and back-end development, tackle real-world challenges, and collaborate in an environment that values cutting-edge technology and innovation",
+        "I am always eager to learn, adapt, and push the boundaries of what’s possible in software development.I believe that technology should not only be powerful but also practical and user-focused, and that’s the mindset I bring to every project."
     ],
     photo1Link: "images/TRY.png",
     photo2Link: "images/FRONT.png",
