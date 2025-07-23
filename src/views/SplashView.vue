@@ -25,7 +25,7 @@
   const message = computed(() => {
     switch (status.value) {
       case 0:
-        return "⏳ LOADING..."
+        return "⏳On its way.."
       case 1:
         return "💯 SUCCESS!"
     }
