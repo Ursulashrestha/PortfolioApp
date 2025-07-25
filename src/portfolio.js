@@ -36,9 +36,10 @@ const socialMediaLinks = {
 // ---  About Section ---
 const about = {
     autobiography: [
-        "I’m a driven Full-Stack Engineer with a strong focus on building scalable and innovative digital solutions. Currently, I’m in my final year of a Master’s in Computer Science at EPITA, Paris, specializing in Software Engineering.",
-        "Recently, I completed an end-of-study internship at École Polytechnique Drahi X-Novation Center, where I worked with the startup, Floware. This experience allowed me to refine my skills in both front-end and back-end development, tackle real-world challenges, and collaborate in an environment that values cutting-edge technology and innovation",
-        "I am always eager to learn, adapt, and push the boundaries of what’s possible in software development.I believe that technology should not only be powerful but also practical and user-focused, and that’s the mindset I bring to every project."
+        "Once upon a time, I opened a code editor, and I must say I never looked back...",
+        "With a background in Software Engineering, I have spent the last few years refining my skills, collaborating with amazing teams, and always learning something new.",
+        "Recently, I completed my Master’s in Computer Science at EPITA, Paris, where I specialized in Software Engineering. During my end-of-study internship at the École Polytechnique Drahi X-Novation Center, I had the opportunity to work with a dynamic startup. This experience sharpened my skills across both front-end and back-end development while challenging me to solve real-world problems in a fast-paced, innovation-driven environment.",
+        "And when I am not coding, you will probably find me learning French or unwinding with a good book or some music. I like to think that a fresh perspective is just as important as clean code."
     ],
     photo1Link: "images/TRY.png",
     photo2Link: "images/FRONT.png",
@@ -51,13 +52,13 @@ const experiences = [
     {
         position: "FullStack Engineer Intern",
         company: {
-            name: "École Polytechnique – Drahi X-Novation Center",
+            name: "École Polytechnique Drahi X Novation Center",
             link: "https://www.floware.fr/"
         },
         duration: "August 2023 - February 2024",
         bulletPoints: [
-            "Developed a scalable SaaS platform for mobility analytics, implementing secure RESTful APIs, token-based authentication, and interactive dashboards.",
-            "Designed and optimized data visualization features for origin-destination analysis using Mapbox, and integrated Azure Blob Storage for secure, scalable sensor data management.",
+            "Developed and deployed a full-stack SaaS platform MVP using Django (backend) and Vue.js/TypeScript (frontend), delivering responsive, scalable interfaces aligned with client needs in France and Spain.",
+            "Built core platform features from scratch, including dashboard views and RESTful API endpoints, improving user experience across platforms.",
             "Collaborated with cross-functional teams including IoT engineers, data scientists, and UI/UX designers using Agile workflows to define the MVP, plan tasks, and ensure timely delivery of critical features."
         ],
         hashtags: [
