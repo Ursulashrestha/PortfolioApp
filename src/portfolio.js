@@ -36,10 +36,10 @@ const socialMediaLinks = {
 // ---  About Section ---
 const about = {
     autobiography: [
-        "Once upon a time, I opened a code editor, and I must say I never looked back...",
-        "With a background in Software Engineering, I have spent the last few years refining my skills, collaborating with amazing teams, and always learning something new.",
-        "Recently, I completed my Master’s in Computer Science at EPITA, Paris, where I specialized in Software Engineering. During my end-of-study internship at the École Polytechnique Drahi X-Novation Center, I had the opportunity to work with a dynamic startup. This experience sharpened my skills across both front-end and back-end development while challenging me to solve real-world problems in a fast-paced, innovation-driven environment.",
-        "And when I am not coding, you will probably find me learning French or unwinding with a good book or some music. I like to think that a fresh perspective is just as important as clean code."
+        "Once upon a time, I opened a code editor, and I must say I never looked back 👩‍💻...",
+        "With a background in Software Engineering, I have spent the last few years refining my skills, collaborating with amazing teams, and always learning something new 💡.",
+        "Recently, I completed my Master’s in Computer Science at EPITA, Paris, where I specialized in Software Engineering. During my end-of-study internship at the École Polytechnique Drahi X-Novation Center as a FullStack Engineer 🚀, I had the opportunity to work with a dynamic startup. This experience sharpened my skills across both front-end and back-end development while challenging me to solve real-world problems in a fast-paced, innovation-driven environment ⚡.",
+        "And when I am not coding, you will probably find me learning French 🍷 or unwinding with a good book 📚 or some music 🎶. I like to think that a fresh perspective is just as important as clean code.🌱"
     ],
     photo1Link: "images/TRY.png",
     photo2Link: "images/FRONT.png",
