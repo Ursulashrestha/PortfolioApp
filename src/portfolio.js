@@ -18,7 +18,6 @@ const greeting = {
     intro: "Hey there! 👋, I am",
     name: "Ursula Shrestha",
     message: "I design and engineer full-stack systems that are fast, secure, and built to last. My work blends clean code with clear purpose, driving real impact where it matters.",
-    resumeLink: "https://drive.google.com/file/d/1qY5gcfWFfveIRw-pbqdFCDf3c8pLBcX3/view?usp=sharing", // 
     logo: {
         link: "images/initials.png",
         custom: true 
@@ -53,7 +52,8 @@ const experiences = [
         position: "FullStack Engineer Intern",
         company: {
             name: "École Polytechnique Drahi X Novation Center",
-            link: "https://www.floware.fr/"
+            link: "https://www.floware.fr/",
+            comp_logo:"images/comp2.jpg"
         },
         duration: "August 2023 - February 2024",
         bulletPoints: [
@@ -78,7 +78,8 @@ const experiences = [
         position: "Mobile Application Developer",
         company: {
             name: "Digi Technology",
-            link: "https://www.digitechnologynepal.com/"
+            link: "https://www.digitechnologynepal.com/",
+            comp_logo: "images/comp1.png"
         },
         duration: "December 2022 - June 2023",
         bulletPoints: [
