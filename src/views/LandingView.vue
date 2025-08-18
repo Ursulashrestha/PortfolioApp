@@ -18,8 +18,9 @@
 
                 <!-- Typing Effect -->
                 <h1 class="text-3xl lg:text-5xl font-extrabold bg-gradient-to-r from-[#A886E4] to-[#dd1eeb] bg-clip-text text-transparent transition-all duration-500 delay-[550ms]">
-                    {{ typedName }}<span class="animate-blink">|</span>
-                </h1>
+                {{ typedName }}<span class="inline-block w-[1ch]" :class="{ 'opacity-100': cursorVisible, 'opacity-0': !cursorVisible }">|</span>
+            </h1>
+
 
 
                 <p class="text-sm lg:text-base text-gray-500 dark:text-gray-400 transition-all duration-500 delay-[600ms]"
@@ -40,7 +41,7 @@ const props = defineProps({
 });
 
 const typedName = ref('');
-const isTyping = ref(true);
+const cursorVisible = ref(true);
 
 const images = import.meta.glob('@/assets/images/*', { eager: true });
 
@@ -49,10 +50,11 @@ const getImageUrl = (path) => {
   return images[key]?.default || '';
 };
 
-// Continuous Typing Effect
-const typeEffect = (text, speed = 100, delay = 1000) => {
+// Terminal-like typing effect
+const typeEffect = (text, speed = 100, pauseBeforeErase = 1500) => {
     let i = 0;
     let isErasing = false;
+    let pauseCounter = 0;
 
     const interval = setInterval(() => {
         if (!isErasing) {
@@ -60,8 +62,12 @@ const typeEffect = (text, speed = 100, delay = 1000) => {
                 typedName.value += text[i];
                 i++;
             } else {
-                isErasing = true;
-                setTimeout(() => {}, delay); // Wait before erasing
+                // Start pause before erasing
+                pauseCounter += speed;
+                if (pauseCounter >= pauseBeforeErase) {
+                    isErasing = true;
+                    pauseCounter = 0;
+                }
             }
         } else {
             if (i > 0) {
@@ -74,15 +80,21 @@ const typeEffect = (text, speed = 100, delay = 1000) => {
     }, speed);
 };
 
-// Start the typing effect
+
+// Cursor blink effect
+setInterval(() => {
+    cursorVisible.value = !cursorVisible.value;
+}, 500);
+
+// Start typing when transition shows
 watchEffect(() => {
     if (props.showTransition && props.content?.name) {
-        typedName.value = ''; // Reset to avoid stacking effects
-        typeEffect(props.content.name, 150, 1000);
+        typedName.value = ''; // Reset text
+        typeEffect(props.content.name, 120, 1500);
     }
 });
-
 </script>
+
 
 <style>
 /* Blinking Cursor */
