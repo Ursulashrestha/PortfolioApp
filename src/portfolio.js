@@ -22,7 +22,7 @@ const greeting = {
         link: "images/initials.png",
         custom: true 
     },
-    portraitLink: "images/p1.png"
+    portraitLink: "images/hyphen.png"
 }
 
 const socialMediaLinks = {
