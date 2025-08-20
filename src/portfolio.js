@@ -37,7 +37,7 @@ const about = {
     autobiography: [
         "Once upon a time, I opened a code editor, and I must say I never looked back 👩‍💻...",
         "With a background in Software Engineering, I have spent the last few years refining my skills, collaborating with amazing teams, and always learning something new 💡.",
-        "Recently, I completed my Master’s in Computer Science at EPITA, Paris, where I specialized in Software Engineering. During my end-of-study internship at the École Polytechnique Drahi X-Novation Center as a FullStack Engineer 🚀, I had the opportunity to work with a dynamic startup. This experience sharpened my skills across both front-end and back-end development while challenging me to solve real-world problems in a fast-paced, innovation-driven environment ⚡.",
+        "I recently completed my Master’s in Computer Science at EPITA, Paris, specializing in Software Engineering. During my end-of-study internship at the École Polytechnique Drahi X-Novation Center as a FullStack Engineer 🚀, I had the opportunity to work with a dynamic startup, contributing to the development of data-driven software solutions for urban mobility.",
         "And when I am not coding, you will probably find me learning French 🍷 or unwinding with a good book 📚 or some music 🎶. I like to think that a fresh perspective is just as important as clean code.🌱"
     ],
     photo1Link: "images/TRY.png",
@@ -97,73 +97,78 @@ const experiences = [
     }
 ]
 
-// --- Work Section ---
-const works = [
-    {
-        projectName: "",
-        yearCompleted: "2024",
-        description: "",
-        links: [
-        ],
-        imageLink: "images/version_edtech_pic.png",
-        alignLeft: false
-    },
-    {
-        projectName: "",
-        yearCompleted: "2023",
-        description: "",
-        links: [
-            {
-                label: "",
-                type: "git",
-                url: ""
-            },
-            {
-                label: "",
-                type: "external",
-                url: ""
-            }
-        ],
-        imageLink: "",
-        alignLeft: true
-    },
-    {
-        projectName: "",
-        yearCompleted: "2022",
-        description: "",
-        techStack: "Swift, SwiftUI",
-        links: [
-            {
-                label: "",
-                type: "git",
-                url: "https://github.com/feifyKike/TrackYourSubsDemo/"
-            },
-            {
-                label: "",
-                type: "external",
-                url: "https://youtu.be/KsTx-F70OOk"
-            }
-        ],
-        imageLink: "images/tracksubs_pic.png",
-        alignLeft: false
-    },
-    {
-        projectName: "Personal Portfolio App",
-        yearCompleted: "2021",
-        description: "Built a dynamic, live-editable personal portfolio website with an admin dashboard for real-time updates. Developed using Django (Python) for the backend, and HTML, CSS, and JavaScript for the frontend, following the MVC architecture, which enhanced my full-stack development skills.",
-        techStack: "Django, Python, HTML, CSS, Bootstrap4, JS",
-        links: [
-            {
-                label: "",
-                type: "external",
-                url: ""
-            }
-        ],
-        imageLink: "images/portfolio_pic.png",
-        alignLeft: true
-    },
-]
+// ---- Tech Stack
 
+const techStack = [
+    {
+        name: "Python",
+        icon: "images/python.png"
+    },
+    {
+        name: "Django",
+        icon: "images/djangoo.png"
+    },
+        {
+        name: "JavaScript",
+        icon: "images/javaScript.png"
+    },
+        {
+        name: "TypeScript",
+        icon: "images/typeScript.png"
+    },
+        {
+        name: "Vue.js",
+        icon: "images/vue.png"
+    },
+    {
+        name: "React",
+        icon: "images/react.png"
+    },
+    {
+        name: "Node.js",
+        icon: "images/nodejs.png"
+    },
+    {
+        name: "TailwindCSS",
+        icon: "images/tailwind.png"
+    },
+        {
+        name: "Pinia",
+        icon: "images/pinia.png"
+    },
+    {
+        name: "Git",
+        icon: "images/git.png"
+    },
+    {
+        name: "Docker",
+        icon: "images/docker.png"
+    },
+    {
+        name: "MongoDB",
+        icon: "images/mongodb.png"
+    },
+        {
+        name: "MySQL",
+        icon: "images/mysql.png"
+    },
+    {
+        name: "PostgreSQL",
+        icon: "images/postgres.png"
+    },
+    {
+        name: "Flutter",
+        icon: "images/flutter.png"
+    },
+    {
+        name: "AWS",
+        icon: "images/aws.png"
+    },
+    {
+        name: "Figma",
+        icon: "images/figma.png"
+    },
+];
 // ---  Contact Section ---
 const contact = {
     externalLink: {
@@ -186,6 +191,6 @@ export default {
     socialMediaLinks,
     about,
     experiences,
-    works,
-    contact
+    contact,
+    techStack
 }
