@@ -1,5 +1,5 @@
 <template>
-  <section class="min-h-screen w-full" ref="workSection" id="skills-section">
+  <section class="min-h-screen w-full" ref="skillsSection" id="skills-section">
     <!-- Header -->
     <div class="relative flex py-5 items-center"
          :class="[visible ? 'translate-y-0 opacity-1 blur-0' : 'translate-y-4 opacity-0 blur-sm', 'transition-all motion-reduce:transition-none duration-500']">
@@ -42,10 +42,10 @@ const props = defineProps({
 
 const showPreview = true
 const showMore = ref(false)
-const workSection = ref({})
+const skillsSection = ref({})
 
 const visible = props.transitions.active && window.matchMedia('(prefers-reduced-motion: no-preference)').matches
-  ? onIntersect(workSection, !!props.transitions.showOnce, { threshold: props.transitions.thresholdOption })
+  ? onIntersect(skillsSection, !!props.transitions.showOnce, { threshold: props.transitions.thresholdOption })
   : true
 
 let toggleShowMore = () => {
