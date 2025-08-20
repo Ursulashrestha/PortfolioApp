@@ -1,4 +1,4 @@
-# Protfolio App
+# Personal Protfolio 
 
 A personal portfolio website built with **Vue 3** and **Tailwind CSS**.  
 It showcases my projects, skills, and professional experience with smooth animations and a responsive design.
