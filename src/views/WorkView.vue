@@ -1,9 +1,9 @@
 <template>
-  <section class="min-h-screen w-full" ref="workSection" id="tech-section">
+  <section class="min-h-screen w-full" ref="workSection" id="skills-section">
     <!-- Header -->
     <div class="relative flex py-5 items-center"
          :class="[visible ? 'translate-y-0 opacity-1 blur-0' : 'translate-y-4 opacity-0 blur-sm', 'transition-all motion-reduce:transition-none duration-500']">
-      <h1 class="text-3xl font-bold pr-2 sm:pr-5">Tech Stack</h1>
+      <h1 class="text-3xl font-bold pr-2 sm:pr-5">Skills</h1>
       <div class="flex-grow border-t border-black dark:border-white border-1"></div>
     </div>
 
@@ -58,6 +58,5 @@ const getImageUrl = (path) => {
   return images[key]?.default || ''
 }
 
-// Use techStack from portfolio
 const techStack = portfolio.techStack
 </script>
