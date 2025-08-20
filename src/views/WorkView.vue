@@ -1,15 +1,21 @@
 <template>
   <section class="min-h-screen w-full" ref="skillsSection" id="skills-section">
-    <!-- Header -->
-    <div class="relative flex py-5 items-center"
-         :class="[visible ? 'translate-y-0 opacity-1 blur-0' : 'translate-y-4 opacity-0 blur-sm', 'transition-all motion-reduce:transition-none duration-500']">
-      <h1 class="text-3xl font-bold pr-2 sm:pr-5">Skills</h1>
-      <div class="flex-grow border-t border-black dark:border-white border-1"></div>
-    </div>
+<div
+  class="relative flex py-5 items-center
+  transition-all motion-reduce:transition-none duration-500"
+  :class="[visible ? 'translate-y-0 opacity-1 blur-0' : 'translate-y-4 opacity-0 blur-sm']"
+>
+  <h1 class="text-3xl font-bold pr-2 sm:pr-5">Skills</h1>
+  <div class="flex-grow border-t border-black dark:border-white border-1"></div>
+</div>
 
-    <!-- Grid content -->
-    <div class="container mx-auto px-4 sm:px-6">
-  <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-8 w-full">
+<!-- Grid content -->
+<div class="container mx-auto px-4 sm:px-6">
+  <div
+    class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-8 w-full
+    transition-all motion-reduce:transition-none duration-500 delay-300"
+    :class="[visible ? 'translate-y-0 opacity-1 blur-0' : 'translate-y-4 opacity-0 blur-sm']"
+  >
     <div
       v-for="(tech, index) in techStack"
       :key="index"
