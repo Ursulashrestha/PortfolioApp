@@ -1,7 +1,6 @@
 # 👩‍💻 Personal Portfolio 
 
-This portfolio website is **designed and built by me**, with a focus on the **frontend** to strengthen my **UI and design skills**.  
-It highlights my skills, professional experiences and projects through an interactive and responsive layout, complete with smooth animations and a user-friendly experience across all devices.
+This portfolio website is **designed and built by me**, with a focus on the **frontend** to strengthen my **UI and design skills**.It highlights my skills, professional experiences and projects through an interactive and responsive layout, complete with smooth animations and a user-friendly experience across all devices.
 
 ---
 
