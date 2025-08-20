@@ -11,7 +11,6 @@
         style="object-fit: contain;" 
     />
 
-
             <div class="flex flex-col space-y-3 text-center md:text-left">
                 <p class="text-lg lg:text-xl text-gray-700 dark:text-gray-300 font-medium transition-all duration-500 delay-[500ms]"
                    :class="showTransition ? 'translate-y-0 opacity-1' : '-translate-y-4 opacity-0'">
@@ -22,8 +21,6 @@
                 <h1 class="text-3xl lg:text-5xl font-extrabold bg-gradient-to-r from-[#A886E4] to-[#dd1eeb] bg-clip-text text-transparent transition-all duration-500 delay-[550ms]">
                 {{ typedName }}<span class="inline-block w-[1ch]" :class="{ 'opacity-100': cursorVisible, 'opacity-0': !cursorVisible }">|</span>
             </h1>
-
-
 
                 <p class="text-sm lg:text-base text-gray-500 dark:text-gray-400 transition-all duration-500 delay-[600ms]"
                    :class="showTransition ? 'translate-y-0 opacity-1' : '-translate-y-4 opacity-0'">
@@ -92,9 +89,14 @@ setInterval(() => {
 watchEffect(() => {
     if (props.showTransition && props.content?.name) {
         typedName.value = ''; // Reset text
-        typeEffect(props.content.name, 120, 1500);
+
+        // Delay
+        setTimeout(() => {
+            typeEffect(props.content.name, 120, 1500);
+        }, 600);
     }
 });
+
 </script>
 
 
