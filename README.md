@@ -13,11 +13,11 @@ It showcases my projects, skills, and professional experience with smooth animat
 - **Experience** section to showcase work history
 - **Contact** form for easy reach-out
 - **Responsive design** for mobile, tablet, and desktop
-- **Dark mode support**
+- **Adaptive theme (light/dark modes)**
 
 ---
 
-**Live Demo**: [ursulashrestha.com.np](https://ursulashrestha.com.np/)
+👉 **Live Demo**: [ursulashrestha.com.np](https://ursulashrestha.com.np/)
 
 ---
 
