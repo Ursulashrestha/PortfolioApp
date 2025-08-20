@@ -1,7 +1,8 @@
 # 👩‍💻 Personal Portfolio 
 
-A personal portfolio website built with **Vue 3** and **Tailwind CSS**.  
-It showcases my projects, skills, and professional experience with smooth animations and a responsive design.
+A portfolio website thoughtfully **designed and created by me**, showcasing my skills, projects and professional experiences.  
+This project primarily focuses on the **frontend**, allowing me to enhance my **UI/UX and frontend design skills**.  
+It features smooth animations and a fully responsive design tailored for all devices.
 
 ---
 
