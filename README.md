@@ -45,11 +45,12 @@ npm install
 
 # Build for production
 npm run build
+
+# Run in development mode
+npm run dev
 ```
 
 ## 🌐 Deployment
 
-The project is deployed using GitHub Pages.
-After building (npm run build), the generated /dist folder is pushed to the gh-pages branch for deployment.
-# Run in development mode
-npm run dev
+The project is deployed using GitHub Pages. After building (npm run build), the generated /dist folder is pushed to the gh-pages branch for deployment.
+
