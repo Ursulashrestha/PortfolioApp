@@ -1,8 +1,7 @@
 # 👩‍💻 Personal Portfolio 
 
-A portfolio website thoughtfully **designed and created by me**, showcasing my skills, projects and professional experiences.  
-This project primarily focuses on the **frontend**, allowing me to enhance my **UI/UX and frontend design skills**.  
-It features smooth animations and a fully responsive design tailored for all devices.
+This portfolio website is **designed and built by me**, with a focus on the **frontend** to strengthen my **UI and design skills**.  
+It highlights my skills, professional experiences and projects through an interactive and responsive layout, complete with smooth animations and a user-friendly experience across all devices.
 
 ---
 
