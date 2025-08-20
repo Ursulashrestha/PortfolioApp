@@ -1,4 +1,4 @@
-# Personal Portfolio 
+# 👩‍💻 Personal Portfolio 
 
 A personal portfolio website built with **Vue 3** and **Tailwind CSS**.  
 It showcases my projects, skills, and professional experience with smooth animations and a responsive design.
@@ -26,7 +26,6 @@ It showcases my projects, skills, and professional experience with smooth animat
 - [Vue 3](https://vuejs.org/) (Composition API)
 - [Tailwind CSS](https://tailwindcss.com/) for styling
 - [Vite](https://vitejs.dev/)
-- Deployment: **GitHub Pages**
 
 ---
 
@@ -44,8 +43,13 @@ cd PortfolioApp
 # Install dependencies
 npm install
 
-# Run in development mode
-npm run dev
-
 # Build for production
 npm run build
+```
+
+## 🌐 Deployment
+
+The project is deployed using GitHub Pages.
+After building (npm run build), the generated /dist folder is pushed to the gh-pages branch for deployment.
+# Run in development mode
+npm run dev
