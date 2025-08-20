@@ -27,7 +27,7 @@
       case 0:
         return "🚀On its way.."
       case 1:
-        return "💯 SUCCESS!"
+        return "💯 VOILÀ!"
     }
   })
   const percentage = computed(() => {
