@@ -21,12 +21,13 @@
         </p>
 
         <a
-          :href="socialMediaLinks.linkedin"
-          target="_blank"
-            class="inline-block mt-8 text-4xl hover:scale-110 transition-transform duration-300 text-black dark:text-white"
-        >
-          <font-awesome-icon :icon="['fab', 'linkedin']"/>
-        </a>
+        :href="socialMediaLinks.linkedin"
+        target="_blank"
+        class="inline-block mt-8 text-4xl transition-transform duration-300 text-black dark:text-white animate-screamJump hover:scale-125 linkedin-rays "
+      >
+        <font-awesome-icon :icon="['fab', 'linkedin']"/>
+      </a>
+
 
         <p class="text-sm mt-8 text-slate-500 dark:text-slate-300">
           {{ content.externalLink.responseTimeMessage }}
@@ -63,3 +64,33 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+/* Radial pulsing rays behind icon */
+.linkedin-rays::before {
+  content: '';
+  position: absolute;
+  inset: 50%; /* center the pseudo-element */
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(10,102,194,0.5) 0%, transparent 70%);
+  opacity: 0;
+  animation: pulse 0.8s infinite;
+  z-index: -1;
+  pointer-events: none;
+}
+
+/* Pulse animation */
+@keyframes pulse {
+  0%, 100% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  50% {
+    opacity: 0.6;
+    transform: translate(-50%, -50%) scale(1.3);
+  }
+}
+</style>
