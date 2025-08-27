@@ -35,73 +35,74 @@
 import { ref, watchEffect } from 'vue';
 
 const props = defineProps({
-    content: Object,
-    showTransition: Boolean
+  content: Object,
+  showTransition: Boolean
 });
 
 const typedName = ref('');
-const cursorVisible = ref(true);
+const cursorVisible = ref(false);
 
 const images = import.meta.glob('@/assets/images/*', { eager: true });
-
 const getImageUrl = (path) => {
   const key = `/src/assets/${path}`;
   return images[key]?.default || '';
 };
 
-// Terminal-like typing effect
-const typeEffect = (text, speed = 100, pauseBeforeErase = 1500) => {
-    let i = 0;
-    let isErasing = false;
-    let pauseCounter = 0;
+let cursorInterval = null;
 
-    const interval = setInterval(() => {
-        if (!isErasing) {
-            if (i < text.length) {
-                typedName.value += text[i];
-                i++;
-            } else {
-                // Start pause before erasing
-                pauseCounter += speed;
-                if (pauseCounter >= pauseBeforeErase) {
-                    isErasing = true;
-                    pauseCounter = 0;
-                }
-            }
-        } else {
-            if (i > 0) {
-                typedName.value = text.substring(0, i - 1);
-                i--;
-            } else {
-                isErasing = false;
-            }
+// Typing + erasing loop
+const typeEffectLoop = (text, typeSpeed = 120, pauseBeforeErase = 1500) => {
+  let i = 0;
+  let isErasing = false;
+  let pauseCounter = 0;
+
+  // Start cursor blinking
+  cursorVisible.value = true;
+  if (!cursorInterval) {
+    cursorInterval = setInterval(() => {
+      cursorVisible.value = !cursorVisible.value;
+    }, 500);
+  }
+
+  const interval = setInterval(() => {
+    if (!isErasing) {
+      if (i < text.length) {
+        typedName.value += text[i];
+        i++;
+      } else {
+        pauseCounter += typeSpeed;
+        if (pauseCounter >= pauseBeforeErase) {
+          isErasing = true;
+          pauseCounter = 0;
         }
-    }, speed);
+      }
+    } else {
+      if (i > 0) {
+        typedName.value = text.substring(0, i - 1);
+        i--;
+      } else {
+        isErasing = false;
+      }
+    }
+  }, typeSpeed);
 };
 
-
-// Cursor blink effect
-setInterval(() => {
-    cursorVisible.value = !cursorVisible.value;
-}, 500);
-
-// Start typing when transition shows
+// Watch for transition to start typing
 watchEffect(() => {
-    if (props.showTransition && props.content?.name) {
-        typedName.value = ''; // Reset text
+  if (props.showTransition && props.content?.name) {
+    typedName.value = '';
+    cursorVisible.value = false; // Ensures cursor hidden initially
 
-        // Delay
-        setTimeout(() => {
-            typeEffect(props.content.name, 120, 1500);
-        }, 600);
-    }
+    // Start typing after transition delay
+    setTimeout(() => {
+      typeEffectLoop(props.content.name, 120, 1500);
+    }, 600);
+  }
 });
-
 </script>
 
 
 <style>
-/* Blinking Cursor */
 @keyframes blink {
     50% { opacity: 0; }
 }
@@ -111,7 +112,7 @@ watchEffect(() => {
 }
 @keyframes float {
     0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-15px); } /* Move up 10px at midpoint */
+    50% { transform: translateY(-15px); }
 }
 
 .float {
