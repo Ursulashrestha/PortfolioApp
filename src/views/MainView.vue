@@ -29,6 +29,13 @@
 						<ExperienceView :content="portfolio.experiences" :transitions="portfolio.transitions" />
 						<ContactView :content="portfolio.contact" :transitions="portfolio.transitions" />
 
+		<footer class="hidden text-center md:block mb-5 text-gray-600 text-lg">
+		<p>
+			Designed & Developed with &lt;3 and way too much caffeine by 
+			<span class="italic font-bold text-link-color">Ursula Shrestha</span>
+		</p>
+		</footer>
+
 
 					</div>
 				</div>
