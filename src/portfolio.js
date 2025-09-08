@@ -37,7 +37,7 @@ const about = {
     autobiography: [
         "Once upon a time, I opened a code editor, and I must say I never looked back 👩‍💻...",
         "With a background in Software Engineering, I have spent the last few years refining my skills, collaborating with amazing teams, and always learning something new 💡.",
-        "I recently completed my Master’s in Computer Science at EPITA, Paris, specializing in Software Engineering. During my end-of-study internship at the École Polytechnique Drahi X-Novation Center as a FullStack Engineer 🚀, I had the opportunity to work with a dynamic startup, contributing to the development of data-driven software solutions for urban mobility.",
+        "I recently completed my Master’s in Computer Science at EPITA, Paris, specialized in Software Engineering. During my end-of-study internship at the École Polytechnique Drahi X-Novation Center as a FullStack Engineer 🚀, I had the opportunity to work with a dynamic startup, contributing to the development of data-driven software solutions for urban mobility.",
         "And when I am not coding, you will probably find me learning French 🍷 or unwinding with a good book 📚 or some music 🎶. I like to think that a fresh perspective is just as important as clean code.🌱"
     ],
     photo1Link: "images/TRY.png",
@@ -163,6 +163,10 @@ const techStack = [
     {
         name: "AWS",
         icon: "images/aws.png"
+    },
+    {
+        name: "Oracle",
+        icon: "images/oracle.png"
     },
     {
         name: "Figma",
